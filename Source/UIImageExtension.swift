@@ -1,3 +1,5 @@
+import UIKit
+
 /// A `UIImage` extension that makes it easier to resize the image and inspect its size.
 
 extension UIImage {
@@ -7,7 +9,7 @@ extension UIImage {
   /// - returns: A new resized image instance.
   func resize(size: CGSize) -> UIImage {
     UIGraphicsBeginImageContextWithOptions(size, false, 0.0)
-    self.drawInRect(CGRect(origin: CGPointZero, size: size))
+    self.drawInRect(CGRect(origin: CGPoint.zero, size: size))
     let newImage = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
     return newImage ?? self

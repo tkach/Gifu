@@ -1,3 +1,4 @@
+import UIKit
 /// Keeps a reference to an `UIImage` instance and its duration as a GIF frame.
 struct AnimatedFrame {
   /// The image that should be used for this frame.
@@ -24,4 +25,3 @@ struct AnimatedFrame {
     return AnimatedFrame(image: image, duration: duration)
   }
 }
-

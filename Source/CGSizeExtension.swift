@@ -1,3 +1,5 @@
+import UIKit
+
 extension CGSize {
   /// Calculates the aspect ratio of the size.
   ///
